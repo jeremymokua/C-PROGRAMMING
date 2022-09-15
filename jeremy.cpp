@@ -1,15 +1,8 @@
-
-#include
- <iostream>
-
+#include <iostream>
 int main()
- 
-{
-
-    // Write hello world
+ {
+ // Write hello world
     
-std::cout << "hello world.";
-   
- return 0;
-
+cout << "hello world.";
+return 0;
 }
