@@ -1,7 +1,8 @@
+//program for hello world
 #include <iostream>
+using of namespace std;
 int main()
  {
- // Write hello world
     
 cout << "hello world.";
 return 0;
