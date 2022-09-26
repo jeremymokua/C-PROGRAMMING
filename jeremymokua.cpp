@@ -1,22 +1,31 @@
-//program to check the largest number
+//program for grading marks 
 #include <iostream>
 using namespace std;
 int main()
 {
-int num1,num2,num3;
-cout<<"enter the three numbers";
-cin>>num1>>num2>>num3;
-if(num1>num2&num1>num3)
+int maths,eng,french,sci,CRE,avg;
+cout<<"enter marks for 5 units"<<endl;
+cin>>maths>>eng>>french>>sci>>CRE;
+avg=(maths+eng+french+sci+CRE)/5;
+if(avg>=70&avg<=100)
 {
-cout<<"num1 is the largest";
+    cout<<"grade A";
 }
-else if(num2>num1&num2>num3)
+else if(avg>=60&avg<=69)
 {
-cout<<"num2 is the largest";
+    cout<<"grade B";
 }
-else if(num3>num1&num3>num2)
+else if(avg>=50&avg<=59)
 {
-    cout<<"num3 is the largest";
+    cout<<"grade C";
 }
-   return 0;
+    else if(avg>=40&avg<=49)
+    {
+        cout<<"grade D";
+    }
+   else if(avg<40)
+{
+    cout<<"fail";
+}
+  return 0;
 }
