@@ -1,22 +1,19 @@
-//program to check the largest number
+//program for sum of even numbers
 #include <iostream>
 using namespace std;
-int main()
-{
-int num1,num2,num3;
-cout<<"enter the three numbers";
-cin>>num1>>num2>>num3;
-if(num1>num2&num1>num3)
-{
-cout<<"num1 is the largest";
+int main(){
+int a,sum=0;
+for(a=1;a<=100;a++){
+    if(a%2==0){
+        cout<<a<<endl;
+        sum=sum+a;
+    }
+
 }
-else if(num2>num1&num2>num3)
-{
-cout<<"num2 is the largest";
+cout<<"the sum of the numbers is"
+<<sum<<endl;
+    return 0;
+
 }
-else if(num3>num1&num3>num2)
-{
-    cout<<"num3 is the largest";
-}
-   return 0;
-}
+
+
